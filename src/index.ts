@@ -1,8 +1,7 @@
 import consoleLogo from 'resource/console_logo.txt';
 import { argv } from 'process';
 import cron, { schedule } from 'node-cron';
-// @ts-ignore
-import naverCrawlingWithPuppeteer from 'src/runner/naverCrawlingWithPuppeteer';
+
 import { cronTable } from 'meta/cronMeta';
 
 console.log(consoleLogo);
