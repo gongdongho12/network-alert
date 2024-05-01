@@ -1,0 +1,51 @@
+{
+  "name": "node-ts-webpack",
+  "version": "1.0.0",
+  "description": "TypeScript runner from Webpack",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "npm run build && npm start",
+    "start": "node build/bundle.js",
+    "build": "webpack",
+    "docker-build": "docker build -t dongho1596/node-ts-webpack .",
+    "docker-run": "docker run -d --name node-ts-webpack -it dongho1596/node-ts-webpack",
+    "docker-deploy": "docker push dongho1596/node-ts-webpack",
+    "lint": "eslint src --fix"
+  },
+  "author": "gongdongho12@gmail.com",
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "puppeteer": "^19.0.0",
+    "raw-loader": "^4.0.2",
+    "ts-loader": "^9.3.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "typescript": "^4.8.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "@types/node-cron": "^3.0.8",
+    "axios": "^0.27.2",
+    "csv-loader": "^3.0.5",
+    "csv-writer": "^1.6.0",
+    "dayjs": "^1.11.5",
+    "lodash": "^4.17.21",
+    "node-cron": "^3.0.2",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-stealth": "^2.9.0"
+  }
+}

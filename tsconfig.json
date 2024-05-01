@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "allowJs": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "strictFunctionTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+      "utils/*": [
+        "src/utils/*"
+      ],
+      "type/*": [
+        "src/type/*"
+      ],
+      "meta/*": [
+        "src/meta/*"
+      ]
+    },
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "sourceMap": true
+  }
+}
